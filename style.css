@@ -1,0 +1,30 @@
+#app{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.left-panel{
+    font-size: 9vh;
+}
+
+.left-panel input{
+    width: 30%;
+    height: 40px;
+    text-align: center;
+    font-size: 37px;
+}
+
+#remain{
+    font-size: 80vh;
+}
+
+.right-panel {
+    width: 50%;
+    background: hsla(120, 100%, 50%, 0.4);
+}
+
+.seconds-remain {
+    display: flex;
+    justify-content: center;
+}

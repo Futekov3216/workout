@@ -1,0 +1,60 @@
+
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+   <script type="module" src="index.js"></script>
+   <script>
+
+        function getInputValue(){
+
+            // Selecting the input element and get its value 
+
+            var inputVal = document.getElementById("interval").value;
+
+            
+
+            // Displaying the value
+
+            alert(inputVal);
+
+        }
+
+    </script>
+</head>
+<body>
+   <div id="app">
+       <div class="left-panel">
+           <div class="wrapper">
+                <div>GOAL REMAIN</div>
+                <div id="goal_remain">00:00</div>
+           </div>
+           <div class="wrapper">
+                <div>ROUNDS MADE</div>
+                <div id="intervals_made">0</div>
+            </div>
+            <div class="wrapper">
+                <div>SETTED GOAL</div>
+                <input type="text" value="" id="goal"/>
+            </div>
+            <div class="wrapper">
+                <div>ROUND DURATIONS</div>
+                <input type="text" value="" id="interval"/>
+            </div>  
+            <div class="wrapper">
+                <button id="start" onclick="calculate()">START</button>
+                <button id="stop" onclick="stop()">STOP</button>
+                <button id="stop" onclick="reset()">RESET</button>
+            </div>
+       </div>
+       <div class="right-panel">
+           <div class="wrapper seconds-remain">
+                   <div id="remain">0</div>
+               </div>
+       </div>
+   </div>
+</body>
+</html>
